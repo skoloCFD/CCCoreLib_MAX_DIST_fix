@@ -1459,7 +1459,7 @@ int DistanceComputationTools::computeCloud2MeshDistancesWithOctree(	const DgmOct
 																	Cloud2MeshDistancesComputationParams& params,
 																	GenericProgressCallback* progressCb/*=nullptr*/)
 {
-	assert(!params.multiThread || params.maxSearchDist <= 0); //maxSearchDist is not compatible with parallel processing
+	//assert(!params.multiThread || params.maxSearchDist <= 0); //maxSearchDist is not compatible with parallel processing
 	assert(!params.signedDistances || !intersection.distanceTransform()); //signed distances are not compatible with Distance Transform acceleration
 
 	if (!octree)
